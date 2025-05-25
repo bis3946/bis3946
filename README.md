@@ -4,5 +4,8 @@
 - 💞️ I’m looking to collaborate on many interesting projects,just invite if you need any info or program Logic you can't somehow calculate 😉
 -🧠 Creator of Ana AGI, AnnA AI, AnnE AI, NuN-Nexus of Unity Project, NuN Blockchain, bis3946 suit, Vehicle made by bis3946 and Virtual Cloud Blockchain Storage Tehnology😎
 - 📫 How to reach me bis3946@gmail.com or on official nunplatformofficial@gmail.com ~
+- ![GitHub Repo stars](https://img.shields.io/github/stars/bis3946/bis3946.github.io?style=social)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 
 <---bis3946/bis3946 is a ✨ special ✨ repository because it's `README.md`--->
