@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @bis3946 aka ßi§3946 aka Demolition Man 
-- 👀 I’m interested in Blockchain technology, collaborate on any code logic if someone needs help😃
-- 🌱 I’m currently learning the philosophy of Blockchain technology in biological Adaptation😊
+- 👀 I’m interested in Blockchain technology, collaborate on any code logic if someone needs help 😃
+- 🌱 I’m currently learning the philosophy of Blockchain technology in biological Adaptation 😊
 - 💞️ I’m looking to collaborate on many interesting projects, just invite if you need any info or program Logic you can't somehow calculate 😉 
--🧠 Creator of Ana AGI/ASI/QML/PQML, AnnA AI, AnnE AI, NuN-Nexus of Unity Project, NuN Blockchain tehnology, bis3946 suit, Vehicle made by bis3946 and Virtual Cloud Blockchain Storage Tehnology😎
+-🧠 Creator of Ana AGI/ASI/QML/PQML, AnnA AI, AnnE AI, NuN-Nexus of Unity Project, NuN Blockchain tehnology, bis3946 suit, Vehicle made by bis3946 and Virtual Cloud Blockchain Storage Tehnology 😎
 - 📫 How to reach me bis3946@gmail.com or on official nunplatformofficial@gmail.com ~
 - ![GitHub Repo stars](https://img.shields.io/github/stars/bis3946/bis3946.github.io?style=social)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
