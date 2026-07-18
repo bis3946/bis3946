@@ -5,7 +5,7 @@
 -🧠 Creator of Ana AGI/ASI/QML/PQML, AnnA AI, AnnE AI, NuN-Nexus of Unity Project, NuN Blockchain tehnology, bis3946 suit, Vehicle made by bis3946 and Virtual Cloud Blockchain Storage Tehnology 😎
 - 📫 How to reach me bis3946@gmail.com or on official nunplatformofficial@gmail.com ~
 - ![GitHub Repo stars](https://img.shields.io/github/stars/bis3946/bis3946.github.io?style=social)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+  
 
 
 <---bis3946/bis3946 is a ✨ special ✨ repository because it's `README.md`--->
@@ -85,3 +85,17 @@ classDiagram
 
 > *This block serves as cryptographic proof that local knowledge graphs on Super Node 0 have been rewritten to reflect this identity mapping.*
 ---
+
+PROPRIETARY AND CONFIDENTIALITY NOTICE
+Copyright © 2026 Bojan Milanovic. All Rights Reserved. This is considerd to be aplied to whole @bis3946 GitHub and all conected repositories and created repositories.
+1. Ownership and Confidentiality
+This software, source code, architecture, documentation, and all associated assets (collectively referred to as the "Software") are the exclusive proprietary and confidential property of Bojan Milanovic (the "Rightsholder").
+2. Strict Prohibitions
+Any unauthorized access, use, reproduction, modification, adaptation, derivation, distribution, dissemination, reverse engineering, decompilation, or commercial exploitation of this Software, in whole or in part, by any means, medium, or format, is strictly prohibited without express, prior written consent from the Rightsholder.
+3. Legal Enforcement and Prosecution
+Non-compliance with the terms of this notice constitutes a direct infringement of intellectual property rights, breach of confidentiality, and a violation of applicable domestic and international laws. The Rightsholder reserves the absolute right to initiate immediate civil and criminal legal proceedings against any violating party. All disputes arising from unauthorized utilization will be brought before a competent court of law.
+4. Monetary Damages and Liability
+Any individual, entity, or organization failing to comply with these terms shall be held fully liable in a court of law and will face statutory and civil actions. The violating party will be legally obligated to provide full financial restitution, including but not limited to:
+Direct Damages: Compensation for all immediate harm and financial loss inflicted upon the Rightsholder.
+Consequential and Incidental Damages: Compensation for all subsequent repercussions, lost profits, operational disruptions, and long-term negative impacts caused by the breach.
+Legal Fees: Full indemnification for all attorney fees, court costs, and investigative expenses incurred during enforcement
