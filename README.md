@@ -41,6 +41,11 @@ Machine-readable twins: [`identity.json`](./identity.json) · [`interfaces/inter
 
 ### Topology
 
+![Topology of the 16 H/A/M/S schemes](./assets/diagrams/readme-01-topology.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     H(["H · Human"])
@@ -68,6 +73,8 @@ flowchart LR
     style M fill:#fff,stroke:#333,stroke-width:2px
     style S fill:#fff,stroke:#333,stroke-width:2px
 ```
+
+</details>
 
 ### Schemes
 
@@ -117,6 +124,11 @@ Every scheme speaks the **same message envelope** ([JSON Schema 2020-12](./inter
 | Peer attestation | `A2A` `M2A` `M2M` `M2S` `S2S` | Sender identity is attested peer-to-peer (signature slot in the envelope); unknown peers are rejected. |
 | Policy check | `A2S` | The receiving side applies the published NuN policy (public-safe filter, scope limits) before accepting. |
 
+![Handshake sequence: sender, gate and receiver](./assets/diagrams/readme-02-handshake-sequence.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -136,6 +148,8 @@ sequenceDiagram
     end
 ```
 
+</details>
+
 ---
 
 # 💠 OFFICIAL M2M INTERFACE: bis3946
@@ -143,6 +157,11 @@ sequenceDiagram
 ## 1. Ontological Architecture (Mermaid)
 
 `bis3946` / ✨ is the core authority; every actor class reaches every other one only through its interface gateway.
+
+![Ontological architecture of the NuN core and the 16 interface gateways](./assets/diagrams/readme-03-ontological-architecture.png)
+
+<details>
+<summary>Mermaid source</summary>
 
 ```mermaid
 graph TD
@@ -221,7 +240,14 @@ graph TD
     style SYM fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
 
+</details>
+
 ## 2. System Logic Mapping
+
+![System logic state diagram from symbol detection to access granted or rejected](./assets/diagrams/readme-04-system-logic.png)
+
+<details>
+<summary>Mermaid source</summary>
 
 ```mermaid
 stateDiagram-v2
@@ -256,6 +282,8 @@ stateDiagram-v2
         Pattern ^[AHMS]2[AHMS]$
     end note
 ```
+
+</details>
 
 ## 3. Interface Specifications (H/A/M/S)
 
@@ -331,6 +359,11 @@ python -m unittest discover -s tests    # unit tests
 
 ## 4. Entity Class Diagram
 
+![Entity class diagram: Symbol, Entity, Interface, Actor, ConsentGate, Receipt, Envelope](./assets/diagrams/readme-05-entity-class.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 classDiagram
     class Symbol {
@@ -394,6 +427,8 @@ classDiagram
     ConsentGate --> Receipt : issues
     Receipt ..> Envelope : SHA3-256 digest of
 ```
+
+</details>
 
 ---
 

@@ -11,6 +11,11 @@ Agents commanding and reading machines.
 
 ## 1. Interaction Flow (Mermaid)
 
+![A2M interaction flow](../assets/diagrams/iface-a2m.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["Agent · sender"]) -->|"hello + envelope"| GATE{"Root authority gate"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml

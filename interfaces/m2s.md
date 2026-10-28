@@ -11,6 +11,11 @@ Machines reporting into systems.
 
 ## 1. Interaction Flow (Mermaid)
 
+![M2S interaction flow](../assets/diagrams/iface-m2s.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["Machine · sender"]) -->|"hello + envelope"| GATE{"Peer attestation"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml

@@ -11,6 +11,11 @@ System status and proofs to humans.
 
 ## 1. Interaction Flow (Mermaid)
 
+![S2H interaction flow](../assets/diagrams/iface-s2h.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["System · sender"]) -->|"hello + envelope"| GATE{"Human consent"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml

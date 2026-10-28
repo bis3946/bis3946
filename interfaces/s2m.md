@@ -11,6 +11,11 @@ Systems configuring and governing machines.
 
 ## 1. Interaction Flow (Mermaid)
 
+![S2M interaction flow](../assets/diagrams/iface-s2m.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["System · sender"]) -->|"hello + envelope"| GATE{"Root authority gate"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml

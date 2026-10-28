@@ -11,6 +11,11 @@ Agents calling system APIs and registries.
 
 ## 1. Interaction Flow (Mermaid)
 
+![A2S interaction flow](../assets/diagrams/iface-a2s.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["Agent · sender"]) -->|"hello + envelope"| GATE{"Policy check"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml

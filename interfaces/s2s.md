@@ -11,6 +11,11 @@ Service-to-service mesh contracts.
 
 ## 1. Interaction Flow (Mermaid)
 
+![S2S interaction flow](../assets/diagrams/iface-s2s.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["System · sender"]) -->|"hello + envelope"| GATE{"Peer attestation"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml

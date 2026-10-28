@@ -11,6 +11,11 @@ Human collaboration protocols (public-safe).
 
 ## 1. Interaction Flow (Mermaid)
 
+![H2H interaction flow](../assets/diagrams/iface-h2h.png)
+
+<details>
+<summary>Mermaid source</summary>
+
 ```mermaid
 flowchart LR
     SND(["Human · sender"]) -->|"hello + envelope"| GATE{"Mutual consent"}
@@ -19,6 +24,8 @@ flowchart LR
     RCV -->|"ack / response"| SND
     style GATE fill:#fff,stroke:#ffd700,stroke-width:2px
 ```
+
+</details>
 
 ## 2. Specifications
 ```yaml
