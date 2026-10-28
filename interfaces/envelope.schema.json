@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nun:bis3946:interface-envelope:1.1.0",
+  "title": "NuN Interface Message Envelope",
+  "description": "Common envelope for all 16 NuN interfaces (H/A/M/S). Public specification; contains no key material.",
+  "type": "object",
+  "required": [
+    "interface",
+    "protocol_version",
+    "authority",
+    "from",
+    "to",
+    "msg_type",
+    "timestamp",
+    "nonce",
+    "gate",
+    "payload"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "interface": {
+      "type": "string",
+      "pattern": "^[AHMS]2[AHMS]$",
+      "description": "Directed scheme id, e.g. A2M. First letter must equal from.actor, last letter to.actor."
+    },
+    "protocol_version": {
+      "type": "string",
+      "const": "1.1.0"
+    },
+    "authority": {
+      "type": "string",
+      "const": "bis3946"
+    },
+    "from": {
+      "type": "object",
+      "required": [
+        "actor",
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "actor": {
+          "type": "string",
+          "enum": [
+            "H",
+            "A",
+            "M",
+            "S"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+:[a-z0-9][a-z0-9._-]{0,62}$"
+        }
+      }
+    },
+    "to": {
+      "type": "object",
+      "required": [
+        "actor",
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "actor": {
+          "type": "string",
+          "enum": [
+            "H",
+            "A",
+            "M",
+            "S"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+:[a-z0-9][a-z0-9._-]{0,62}$"
+        }
+      }
+    },
+    "msg_type": {
+      "type": "string",
+      "enum": [
+        "hello",
+        "ack",
+        "nack",
+        "command",
+        "query",
+        "response",
+        "event",
+        "telemetry",
+        "report",
+        "alert",
+        "consent_request",
+        "consent_grant",
+        "consent_revoke",
+        "handoff",
+        "config",
+        "heartbeat",
+        "proof"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?(Z|[+-][0-9]{2}:[0-9]{2})$"
+    },
+    "nonce": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{16,64}$",
+      "description": "Unique per message; receivers reject replays."
+    },
+    "correlation_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,64}$"
+    },
+    "gate": {
+      "type": "object",
+      "required": [
+        "type",
+        "ref"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "human_consent",
+            "root_authority_gate",
+            "mutual_consent",
+            "peer_attestation",
+            "policy_check"
+          ]
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "granted_by": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      }
+    },
+    "payload": {
+      "type": "object"
+    },
+    "signature": {
+      "type": "string",
+      "maxLength": 1024,
+      "description": "Optional placeholder for a detached signature. Public examples use UNSIGNED-EXAMPLE."
+    }
+  }
+}
